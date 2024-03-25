@@ -1,0 +1,38 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.TimePickerPractice_customTheme" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="materialTimePickerTheme">@style/ThemeOverlay.Material3.MaterialTimePicker</item>
+    </style>
+
+    <style name="Theme.TimePickerPractice_customTheme" parent="Base.Theme.TimePickerPractice_customTheme" />
+
+
+    <!--    link for understanding the color changing on the timepicker dialog of material3
+               https://m3.material.io/components/time-pickers/specs                            -->
+
+    <style name="CustomMaterialTimePicker" parent="ThemeOverlay.Material3.MaterialTimePicker">
+        <item name="colorPrimary">@color/red</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <item name="colorOnSurface">@color/blue</item>
+        <item name="colorOnPrimaryContainer">@color/black</item>
+        <item name="colorPrimaryContainer">@color/black</item>
+        <item name="chipStyle">@style/Widget.App.Chip</item>
+        <item name="colorOnSurfaceVariant">@color/blue</item>
+        <item name="colorOnTertiaryContainer">@color/red</item>
+        <item name="colorTertiaryContainer">@color/yellow</item>
+    </style>
+
+    <style name="Widget.App.Chip" parent="Widget.Material3.MaterialTimePicker.Display">
+        <item name="android:textColor">@color/shrine_diplay_text_color</item>
+    </style>
+
+    <style name="Widget.App.TimePicker.Clock" parent="Widget.Material3.MaterialTimePicker.Clock">
+        <item name="clockFaceBackgroundColor">@color/yellow</item>
+        <item name="clockHandColor">@color/green</item>
+        <item name="clockNumberTextColor">@color/yellow</item>
+    </style>
+
+
+</resources>
